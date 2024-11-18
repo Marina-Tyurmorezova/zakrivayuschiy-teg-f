@@ -28,55 +28,6 @@
   align-items: center;
 }
 
-dialog {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-dialog:not([open]) {
-  opacity: 0;
-  pointer-events: none;
-
-  .dialog {
-    display: none;
-  }
-}
-
-dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.75);
-  backdrop-filter: blur(7px);
-}
-
-.dialog {
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  height: 191px;
-  width: clamp(341px, 10vw, 353px);
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  justify-content: space-between;
-  justify-items: stretch;
-  align-items: stretch;
-  column-gap: 20px;
-}
-
-.dialog-floppy {
-  margin-block: 12px;
-  width: 39px;
-  height: 39px;
-}
-
-.dialog-text {
-  text-transform: uppercase;
-  line-height: var(--card-font-line-height);
-}
-
-.dialog-button {
-  grid-column: span 2;
-}
-
 .content-width {
   width: var(--card-width);
 }
@@ -299,6 +250,56 @@ dialog::backdrop {
 
 .footer-button-text-align {
   margin-block-start: 8px;
+}
+
+
+dialog {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+
+  .dialog {
+    display: none;
+  }
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+  backdrop-filter: blur(7px);
+}
+
+.dialog {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  height: 191px;
+  width: clamp(341px, 10vw, 353px);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: stretch;
+  column-gap: 20px;
+}
+
+.dialog-floppy {
+  margin-block: 12px;
+  width: 39px;
+  height: 39px;
+}
+
+.dialog-text {
+  text-transform: uppercase;
+  line-height: var(--card-font-line-height);
+}
+
+.dialog-button {
+  grid-column: span 2;
 }
 
 /*состояния и анимации*/

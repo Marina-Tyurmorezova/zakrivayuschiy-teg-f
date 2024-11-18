@@ -48,19 +48,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <dialog id="dialog-save" class="dialog button__text">
-      <svg class="dialog-floppy" viewBox="0 0 39 39">
-        <use href="./svg/floppy.svg#floppy" />
-      </svg>
-      <p class="dialog-text">
-        Вставьте дискету, чтобы продолжить
-      </p>
-      <button class="button dialog-button button__text button-focus" type="button"
-        onclick="window['dialog-save'].close();">
-        Ок
-      </button>
-    </dialog>
+  <main class="main">    
     <section class="card content-width">
       <article class="content content-border">
         <h2 class="card-title">
@@ -474,6 +462,18 @@
       </span>
     </button>
   </footer>
+  <dialog id="dialog-save" class="dialog button__text">
+    <svg class="dialog-floppy" viewBox="0 0 39 39">
+      <use href="./svg/floppy.svg#floppy" />
+    </svg>
+    <p class="dialog-text">
+      Вставьте дискету, чтобы продолжить
+    </p>
+    <button class="button dialog-button button__text button-focus" type="button"
+      onclick="window['dialog-save'].close();">
+      Ок
+    </button>
+  </dialog>
   <script src="./scripts/like.js"></script>
 </body>
 
