@@ -36,6 +36,10 @@ dialog {
 dialog:not([open]) {
   opacity: 0;
   pointer-events: none;
+
+  .dialog {
+    display: none;
+  }
 }
 
 dialog::backdrop {
@@ -209,9 +213,13 @@ dialog::backdrop {
 .image {
   width: 100%;
   object-fit: cover;
+  position: relative;
+}
+
+.image-border {
   border-block-start: var(--accent-color) solid 2px;
   border-block-end: var(--accent-color) solid 2px;
-  position: relative;
+  z-index: 1;
 }
 
 .button-group {
