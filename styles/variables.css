@@ -22,7 +22,7 @@
     --disabled-opacity: 0.6;
     --gradient-line-color-to-right: #d3d3d3;
     --gradient-line-color-at-top: #e7e7e7;
-    --gradient-lone-color-to-bottom: #1a1a1a; 
+    --gradient-lone-color-to-bottom: #1a1a1a;
     --background-gradient:
     repeating-linear-gradient(to right , var(--gradient-line-color-to-right), transparent  2px),
     repeating-linear-gradient(to bottom , var(--gradient-line-color-to-right), transparent  2px),
