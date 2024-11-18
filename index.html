@@ -448,8 +448,6 @@
         </div>
       </article>
     </section>
-  </main>
-  <footer>
     <button class="button footer__icon-button button-focus button-save-memory" type="button"
       onclick="window['dialog-save'].showModal();" aria-controls="dialog-save">
       <span class="button__text footer-button-align">
@@ -461,6 +459,8 @@
         </span>
       </span>
     </button>
+  </main>
+  <footer>    
   </footer>
   <dialog id="dialog-save" class="dialog button__text">
     <svg class="dialog-floppy" viewBox="0 0 39 39">
@@ -471,7 +471,7 @@
     </p>
     <button class="button dialog-button button__text button-focus" type="button"
       onclick="window['dialog-save'].close();">
-      Ок
+      <span>Ок</span>
     </button>
   </dialog>
   <script src="./scripts/like.js"></script>
