@@ -51,7 +51,7 @@
   <main class="main">
     <dialog id="dialog-save" class="dialog button__text">
       <svg class="dialog-floppy" viewBox="0 0 39 39">
-        <use href="./svg/floppy.svg#floppy">
+        <use href="./svg/floppy.svg#floppy" />
       </svg>
       <p class="dialog-text">
         Вставьте дискету, чтобы продолжить
@@ -145,11 +145,10 @@
                 <path fill="var(--like-accent-color)" class="sparks"
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 <defs>
-                  <clipPath id="a">
+                  <clipPath>
                     <path fill="#fff" d="M0 0h39v36H0z" />
                   </clipPath>
                 </defs>
-              </svg>
               </svg>
             </button>
             <button class="button button-focus card__like-button ">
@@ -195,7 +194,7 @@
                 <path fill="var(--like-accent-color)" class="sparks"
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" />
                 <defs>
-                  <clipPath id="a">
+                  <clipPath>
                     <path fill="#fff" d="M0 0h39v36H0z" />
                   </clipPath>
                 </defs>
@@ -467,7 +466,7 @@
       onclick="window['dialog-save'].showModal();" aria-controls="dialog-save">
       <span class="button__text footer-button-align">
         <svg class="floppy-icon" viewBox="0 0 39 39">
-          <use href="./svg/floppy.svg#floppy" class="floppy">
+          <use href="./svg/floppy.svg#floppy" class="floppy" />
         </svg>
         <span class="footer-button-text-align">
           Сохранить на память
