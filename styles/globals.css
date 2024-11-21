@@ -24,7 +24,9 @@ ol,
 li,
 div,
 svg,
-article {
+article,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
 }

@@ -1,32 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --basic-font: 'Inter-Variable', system-ui;
-    --accent-font: 'PressStart2P-Regular', sans-serif;
-    --title-font-weight: 400;
-    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --title-margin-top: clamp(120px, 30vw, 136px);
-    --subtitle-font-size:  clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-    --nav-font-size: 14px;
-    --card-width: clamp(375px, 90%, 700px);
-    --card-title-font-weight: 700;  /*785 for dark*/
-    --card-text-font-weight: 400; /*485 for dark*/
-    --card-font-size: 18px;
-    --card-font-line-height: 21px;
-    --button-line-height: 12.6px;
-    --background-color: #FFFFFF;
-    --accent-color: #000000;
-    --difference-color: #FFFFFF;
-    --like-contour-color: #000000;
-    --like-accent-color: #FF0000;
-    --disabled-opacity: 0.6;
-    --gradient-line-color-to-right: #d3d3d3;
-    --gradient-line-color-at-top: #e7e7e7;
-    --gradient-lone-color-to-bottom: #1a1a1a;
-    --background-gradient:
-    repeating-linear-gradient(to right , var(--gradient-line-color-to-right), transparent  2px),
-    repeating-linear-gradient(to bottom , var(--gradient-line-color-to-right), transparent  2px),
-    linear-gradient(to bottom , var(--gradient-line-color-at-top) 0.01%, var(--gradient-lone-color-to-bottom));
-
+  --basic-font: "Inter-Variable", system-ui;
+  --accent-font: "PressStart2P", sans-serif;
+  --title-font-weight: 400;
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --title-margin-top: clamp(120px, 30vw, 136px);
+  --subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --nav-font-size: 14px;
+  --card-width: clamp(375px, 90%, 700px);
+  --card-title-font-weight: 700;
+  --card-text-font-weight: 400;
+  --card-font-size: 18px;
+  --card-font-line-height: 21px;
+  --button-line-height: 12.6px; 
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --difference-color: #ffffff;
+  --like-contour-color: #000000;
+  --like-accent-color: #ff0000;
+  --disabled-opacity: 0.6;
+  --gradient-line-color-to-right: #d3d3d3;
+  --gradient-line-color-at-top: #e7e7e7;
+  --gradient-lone-color-to-bottom: #1a1a1a;
+  --background-gradient: 
+    repeating-linear-gradient(
+      to right,
+      var(--gradient-line-color-to-right) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradient-line-color-to-right) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradient-line-color-at-top) 0.01%,
+      var(--gradient-lone-color-to-bottom)
+    );
 }
- 
